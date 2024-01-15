@@ -155,12 +155,12 @@ func getStakanData(id int, ch chan b.Mexcs, wg *sync.WaitGroup, mysqlDataStruct 
 			mysqlDataStruct.AskOne, _ = strconv.ParseFloat(stakanDataStruct.Asks[0][0], 64)
 			mysqlDataStruct.AskDuo, _ = strconv.ParseFloat(stakanDataStruct.Asks[0][1], 64)
 
-			fmt.Println("Разница: BidOne: ", mysqlDataStruct.BidOne)
-			fmt.Println("Разница: AskOne: ", mysqlDataStruct.AskOne)
+			//fmt.Println("Разница: BidOne: ", mysqlDataStruct.BidOne)
+			//fmt.Println("Разница: AskOne: ", mysqlDataStruct.AskOne)
 
 			mysqlDataStruct.Raznitca = (mysqlDataStruct.BidOne/mysqlDataStruct.AskOne - 1) * 100
-			fmt.Println("Разница: ", mysqlDataStruct.Raznitca)
-			fmt.Println("------------")
+			//fmt.Println("Разница: ", mysqlDataStruct.Raznitca)
+			//fmt.Println("------------")
 
 		} else {
 
